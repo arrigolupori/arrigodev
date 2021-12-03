@@ -21,7 +21,7 @@ export default function Home() {
 				<meta name='twitter:site' content='@ArrigoLupori' />
 				<meta
 					name='twitter:title'
-					content='Build a SaaS from Scratch for Free | Arrigo.dev'
+					content='Build a SaaS from Scratch for Free | Arrigo.dev '
 				/>
 				<meta
 					name='twitter:description'
