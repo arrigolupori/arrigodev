@@ -37,7 +37,7 @@ export default function Home() {
 				/>
 				<meta
 					property='og:title'
-					content='Build a SaaS from Scratch for Free | Arrigo.dev'
+					content='Build a SaaS from Scratch for Free | Arrigo.dev '
 				/>
 				<meta
 					property='og:description'
