@@ -50,6 +50,20 @@ export default function SubBox() {
 					<strong>Join now</strong>
 				</button>
 			</form>
+			<p className={styles.expectation}>
+				Don't really know what to expect?
+			</p>
+			<p className={styles.expectation}>
+				Here's{' '}
+				<a
+					href='https://eocampaign1.com/web-version?p=84114309-5506-11ec-96e5-06b4694bee2a&pt=campaign&t=1638626301&s=78053f209dda44683ee9d82bad1fcb374a566683aea31d7a60a9b02013c31957'
+					className={styles.expectationLink}
+					target='_blank'
+				>
+					the first email I sent out
+				</a>{' '}
+				to people who joined.
+			</p>
 		</>
 	)
 }

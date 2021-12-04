@@ -6,3 +6,16 @@
 	display: block;
 	margin-bottom: 1em;
 }
+
+.expectation {
+	font-size: 0.9em;
+	font-style: italic;
+}
+
+.expectationLink {
+	color: blue;
+}
+
+.expectationLink:hover {
+	text-decoration: underline;
+}

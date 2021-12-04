@@ -10,8 +10,9 @@ export default function Hero() {
 				<span className={styles.forFree}>For free.</span>
 			</h1>
 			<p>
-				Every 2 weeks, receive a new issue of the Build Your SaaS series
-				directly in your inbox. It's 100% free, no strings attached.
+				Every 2 weeks, receive a new issue of the SaaS boilerplate
+				series directly in your inbox. It's 100% free, no strings
+				attached.
 			</p>
 			<SubBox />
 		</>
