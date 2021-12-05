@@ -1,4 +1,5 @@
 import styles from '../styles/SubBox.module.css'
+import Emoji from './Emoji'
 
 export default function SubBox() {
 	const registerUser = async (event) => {
@@ -49,6 +50,18 @@ export default function SubBox() {
 				<button type='submit' className={styles.displayBlock}>
 					Join now
 				</button>
+				<div className={styles.benefits}>
+					<p>
+						{' '}
+						<Emoji symbol='✔' label='checkmark' />
+						<span> Join 30+ fellow SaaS enthusiasts</span>
+					</p>
+					<p>
+						{' '}
+						<Emoji symbol='✔' label='checkmark' />
+						<span> Get access to all downloadable resources</span>
+					</p>
+				</div>
 			</form>
 			<p className={styles.expectation}>
 				Don't really know what to expect?

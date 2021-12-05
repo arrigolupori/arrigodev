@@ -1,10 +1,16 @@
 .formBottom {
-	padding-bottom: 0.5em;
+	padding-bottom: 0.1em;
 }
 
 .displayBlock {
 	display: block;
 	margin-bottom: 1em;
+}
+
+.benefits {
+	font-size: 0.8em;
+	font-style: italic;
+	color: #3acb80;
 }
 
 .expectation {
