@@ -1,6 +1,4 @@
-import Emoji from './Emoji'
 import SubBox from './SubBox'
-import styles from '../styles/Hero.module.css'
 
 export default function Footer() {
 	return (

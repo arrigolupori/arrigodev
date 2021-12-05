@@ -47,7 +47,7 @@ export default function SubBox() {
 					required
 				/>
 				<button type='submit' className={styles.displayBlock}>
-					<strong>Join now</strong>
+					Join now
 				</button>
 			</form>
 			<p className={styles.expectation}>
