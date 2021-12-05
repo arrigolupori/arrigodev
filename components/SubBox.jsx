@@ -20,7 +20,7 @@ export default function SubBox() {
 			)
 			if (res.ok) {
 				alert(
-					'Thank you, your information was submitted correctly. You will receive the first Build Your SaaS issue in your inbox on Dec 18 2021. Looking forward to your participation!'
+					'Thank you, your information was submitted correctly. You will receive the first SaaS boilerplate issue in your inbox on Dec 18 2021. Looking forward to your participation!'
 				)
 			}
 		} catch {
