@@ -33,20 +33,6 @@ export default function Home() {
 						content='Learn how to build a SaaS app from scratch with the latest technologies for free. Every 2 weeks a new issue directly in your inbox.'
 					/>
 					<link rel='icon' href='/favicon.ico' />
-					<meta name='twitter:card' content='summary_large_image' />
-					<meta name='twitter:site' content='@ArrigoLupori' />
-					<meta
-						name='twitter:title'
-						content='Build a SaaS from Scratch for Free | Arrigo.dev '
-					/>
-					<meta
-						name='twitter:description'
-						content='Learn how to build a SaaS app from scratch with the latest technologies for free. Every 2 weeks a new issue directly in your inbox.'
-					/>
-					<meta
-						name='twitter:image'
-						content='/arrigodev-featured-banner.jpg'
-					/>
 					<meta
 						property='og:image'
 						content='/arrigodev-featured-banner.jpg'
