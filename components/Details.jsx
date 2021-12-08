@@ -19,14 +19,57 @@ export default function Details() {
 			</p>
 			<h3>Key details of the series:</h3>
 			<ul>
-				<li>The app is developed in Node.js, React &amp; Next.js</li>
-				<li>I will focus on common SaaS features only</li>
-				<li>CSS styling will be very basic</li>
+				<li>
+					The backend is{' '}
+					<a href='https://nestjs.com/' target='_blank'>
+						NestJS
+					</a>{' '}
+					and the frontend{' '}
+					<a href='https://nextjs.org/' target='_blank'>
+						Next.js
+					</a>
+				</li>
+				<li>
+					Both front- and back-end use{' '}
+					<a href='https://www.typescriptlang.org/' target='_blank'>
+						TypeScript
+					</a>
+				</li>
+				<li>
+					Database hosted with{' '}
+					<a href='https://www.mongodb.com/atlas' target='_blank'>
+						MongoDB Atlas
+					</a>
+				</li>
+				<li>Main focus on common SaaS features</li>
+				<li>
+					Simple authentication via{' '}
+					<a href='https://auth0.com/' target='_blank'>
+						Auth0
+					</a>
+				</li>
+				<li>Secondary focus on UX design</li>
 			</ul>
 			<p>
-				The end result will be a SaaS boilerplate available for anyone
-				to use on GitHub. All necessary tools will be explained in the
-				series.
+				The series will also feature 2 free third-party APIs:{' '}
+				<a href='https://clearbit.com/developers' target='_blank'>
+					Clearbit
+				</a>{' '}
+				and{' '}
+				<a href='https://hunter.io/api' target='_blank'>
+					Hunter
+				</a>
+				. They will help you get familiar with accessing data.
+			</p>
+			<p>
+				The end result will be a{' '}
+				<a
+					href='https://github.com/arrigolupori/prospectrove-saas-boilerplate'
+					target='_blank'
+				>
+					SaaS boilerplate available for anyone to use on GitHub
+				</a>
+				. All necessary tools will be explained in the series.
 			</p>
 		</>
 	)

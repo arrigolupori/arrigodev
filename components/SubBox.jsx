@@ -54,7 +54,7 @@ export default function SubBox() {
 					<p>
 						{' '}
 						<Emoji symbol='✔' label='checkmark' />
-						<span> Join 30+ fellow SaaS enthusiasts</span>
+						<span> Join 50+ fellow SaaS enthusiasts</span>
 					</p>
 					<p>
 						{' '}

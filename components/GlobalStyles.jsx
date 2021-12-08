@@ -9,6 +9,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     a {
-        color: #68cbf8;
+        color: #03a9f4;
     }
 `
