@@ -49,6 +49,11 @@ export default function Home() {
 					<meta property='og:image:height' content='675' />
 				</Head>
 				<Toggle theme={theme} toggleTheme={themeToggler} />
+				<p>
+					<Link href='/blog'>
+						<a>Read the latest updates »</a>
+					</Link>
+				</p>
 				<Hero />
 				<Details />
 				<WhySub />
