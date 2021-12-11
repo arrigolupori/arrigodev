@@ -9,7 +9,6 @@ import { lightTheme, darkTheme } from '../../components/Themes'
 import { GlobalStyles } from '../../components/GlobalStyles'
 import PostItem from '../../components/PostItem'
 import Toggle from '../../components/ThemeToggler'
-import Footer from '../../components/Footer'
 import styles from '../../styles/Home.module.css'
 import sortByDate from '../../utils/sortByDate'
 

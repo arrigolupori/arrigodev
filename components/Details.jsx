@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Emoji from './Emoji'
 
 export default function Details() {
@@ -24,12 +25,9 @@ export default function Details() {
 			</h3>
 			<p>
 				If you're unsure whether this series is right for you,{' '}
-				<a
-					href='https://arrigo.dev/blog/saas-series-release'
-					target='_blank'
-				>
-					check the full table of contents
-				</a>
+				<Link href='/blog/saas-series-toc'>
+					<a>check the full table of contents</a>
+				</Link>
 				. Here's what you can expect at a high level:
 			</p>
 			<ul>
@@ -54,15 +52,9 @@ export default function Details() {
 				</li>
 			</ul>
 			<p>
-				The series will also feature 2 free third-party APIs:{' '}
-				<a href='https://clearbit.com/developers' target='_blank'>
-					Clearbit
-				</a>{' '}
-				and{' '}
-				<a href='https://hunter.io/api' target='_blank'>
-					Hunter
-				</a>
-				. They will help you get familiar with accessing data.
+				You will also learn about the 2 primary architectures behind
+				most SaaS apps {'(monolithic and decoupled)'} and which one to
+				choose.
 			</p>
 			<h3>
 				<Emoji symbol='👉🏼' label='hand pointing to right' />{' '}
@@ -116,6 +108,18 @@ export default function Details() {
 					Simple authentication via{' '}
 					<a href='https://auth0.com/' target='_blank'>
 						Auth0
+					</a>
+				</li>
+				<li>
+					Styling &amp; UI with{' '}
+					<a href='https://tailwindcss.com/' target='_blank'>
+						TailwindCSS
+					</a>
+				</li>
+				<li>
+					Recurring billing via{' '}
+					<a href='https://stripe.com/' target='_blank'>
+						Stripe
 					</a>
 				</li>
 			</ul>

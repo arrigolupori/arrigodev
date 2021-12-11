@@ -8,6 +8,7 @@ import { useDarkMode } from '../../components/useDarkMode'
 import { lightTheme, darkTheme } from '../../components/Themes'
 import { GlobalStyles } from '../../components/GlobalStyles'
 import Toggle from '../../components/ThemeToggler'
+import Footer from '../../components/Footer'
 import styles from '../../styles/Home.module.css'
 
 export default function PostPage({
@@ -45,6 +46,7 @@ export default function PostPage({
 						></div>
 					</div>
 				</div>
+				<Footer />
 			</div>
 		</ThemeProvider>
 	)
