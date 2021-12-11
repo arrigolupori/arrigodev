@@ -40,13 +40,15 @@ Here's the table of contents:
     - Creating a dashboard with user data graphs
     - Usage limits, upsells, and small final settings
     - Final considerations for prod environment
-6. **[Feb 28, 2022] SaaS marketing**
+6. **[Feb 28, 2022] Basic SaaS marketing**
     - SEO considerations in Next.js
     - Building a dynamic landing page
     - Public pricing page with onboarding flow
     - Creating a search-optimized blog
 
 Some of the contents may be subject to change as I go through the series. I will update you via email in that case so you always know what to expect and can prepare accordingly.
+
+For those interested in both advanced functionality and SaaS marketing, I will create additional mini-courses on top of the main series that will be available for very affordable prices.
 
 Haven't signed up yet?
 
