@@ -1,8 +1,8 @@
-import Head from 'next/head'
 import fs from 'fs'
 import path from 'path'
 import Link from 'next/link'
 import matter from 'gray-matter'
+import SEO from '../../components/SEO'
 import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../../components/useDarkMode'
 import { lightTheme, darkTheme } from '../../components/Themes'
@@ -20,31 +20,26 @@ export default function Home({ posts }) {
 	if (!mountedComponent) return <div />
 
 	return (
-		<ThemeProvider theme={themeMode}>
-			<GlobalStyles />
-			<div className={styles.container}>
-				<Head>
-					<title>
-						Get Help on SaaS &amp; Content Marketing | Arrigo.dev
-					</title>
-					<meta name='author' content='Arrigo Lupori' />
-					<meta
-						name='description'
-						content="Learn the latest in Software-as-a-Service &amp; market your online business to success with Arrigo's blog posts."
-					/>
-					<link rel='icon' href='/favicon.ico' />
-				</Head>
-				<Toggle theme={theme} toggleTheme={themeToggler} />
-				<p>
-					<Link href='/'>
-						<a>« back to home page</a>
-					</Link>
-				</p>
-				{posts.map((post, index) => (
-					<PostItem key={index} post={post} />
-				))}
-			</div>
-		</ThemeProvider>
+		<>
+			<SEO
+				title='Get Help on SaaS &amp; Content Marketing'
+				description="Learn the latest in Software-as-a-Service &amp; market your online business to success with Arrigo's blog posts."
+			/>
+			<ThemeProvider theme={themeMode}>
+				<GlobalStyles />
+				<div className={styles.container}>
+					<Toggle theme={theme} toggleTheme={themeToggler} />
+					<p>
+						<Link href='/'>
+							<a>« back to home page</a>
+						</Link>
+					</p>
+					{posts.map((post, index) => (
+						<PostItem key={index} post={post} />
+					))}
+				</div>
+			</ThemeProvider>
+		</>
 	)
 }
 

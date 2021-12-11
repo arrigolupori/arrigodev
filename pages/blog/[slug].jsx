@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import SEO from '../../components/SEO'
 import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../../components/useDarkMode'
 import { lightTheme, darkTheme } from '../../components/Themes'
@@ -12,7 +13,7 @@ import Footer from '../../components/Footer'
 import styles from '../../styles/Home.module.css'
 
 export default function PostPage({
-	frontmatter: { title, meta_title, date },
+	frontmatter: { title, meta_title, excerpt, date },
 	content,
 	slug,
 }) {
@@ -23,32 +24,35 @@ export default function PostPage({
 	if (!mountedComponent) return <div />
 
 	return (
-		<ThemeProvider theme={themeMode}>
-			<GlobalStyles />
-			<div className={styles.container}>
-				<Toggle theme={theme} toggleTheme={themeToggler} />
-				<p>
-					<Link href='/blog'>
-						<a>« back to latest updates</a>
-					</Link>
-				</p>
-				<div>
-					<h1>{meta_title}</h1>
+		<>
+			<SEO title={meta_title} description={excerpt} />
+			<ThemeProvider theme={themeMode}>
+				<GlobalStyles />
+				<div className={styles.container}>
+					<Toggle theme={theme} toggleTheme={themeToggler} />
+					<p>
+						<Link href='/blog'>
+							<a>« back to latest updates</a>
+						</Link>
+					</p>
 					<div>
-						<div className='mr-4'>{date}</div>
+						<h1>{meta_title}</h1>
+						<div>
+							<div className='mr-4'>{date}</div>
+						</div>
+						<div>
+							<div
+								className='blog-text'
+								dangerouslySetInnerHTML={{
+									__html: marked(content),
+								}}
+							></div>
+						</div>
 					</div>
-					<div>
-						<div
-							className='blog-text'
-							dangerouslySetInnerHTML={{
-								__html: marked(content),
-							}}
-						></div>
-					</div>
+					<Footer />
 				</div>
-				<Footer />
-			</div>
-		</ThemeProvider>
+			</ThemeProvider>
+		</>
 	)
 }
 

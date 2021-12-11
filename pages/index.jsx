@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Head from 'next/head'
+import SEO from '../components/SEO'
 import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../components/useDarkMode'
 import { lightTheme, darkTheme } from '../components/Themes'
@@ -20,46 +20,27 @@ export default function Home() {
 	if (!mountedComponent) return <div />
 
 	return (
-		<ThemeProvider theme={themeMode}>
-			<GlobalStyles />
-			<div className={styles.container}>
-				<Head>
-					<title>
-						Build a SaaS from Scratch for Free | Arrigo.dev
-					</title>
-					<meta name='author' content='Arrigo Lupori' />
-					<meta
-						name='description'
-						content='Learn how to build a SaaS app from scratch with the latest technologies for free. Every 2 weeks a new issue directly in your inbox.'
-					/>
-					<link rel='icon' href='/favicon.ico' />
-					<meta
-						property='og:image'
-						content='/arrigodev-featured-banner.jpg'
-					/>
-					<meta
-						property='og:title'
-						content='Build a SaaS from Scratch for Free | Arrigo.dev'
-					/>
-					<meta
-						property='og:description'
-						content='Learn how to build a SaaS app from scratch with the latest technologies for free. Every 2 weeks a new issue directly in your inbox.'
-					/>
-					<meta property='og:image:width' content='1200' />
-					<meta property='og:image:height' content='675' />
-				</Head>
-				<Toggle theme={theme} toggleTheme={themeToggler} />
-				<p>
-					<Link href='/blog'>
-						<a>Read the latest updates »</a>
-					</Link>
-				</p>
-				<Hero />
-				<Details />
-				<WhySub />
-				<WhoAm />
-				<Footer />
-			</div>
-		</ThemeProvider>
+		<>
+			<SEO
+				title='Build a SaaS from Scratch for Free'
+				description='Learn how to build a SaaS app from scratch with the latest technologies for free. Every 2 weeks a new issue directly in your inbox.'
+			/>
+			<ThemeProvider theme={themeMode}>
+				<GlobalStyles />
+				<div className={styles.container}>
+					<Toggle theme={theme} toggleTheme={themeToggler} />
+					<p>
+						<Link href='/blog'>
+							<a>Read the latest updates »</a>
+						</Link>
+					</p>
+					<Hero />
+					<Details />
+					<WhySub />
+					<WhoAm />
+					<Footer />
+				</div>
+			</ThemeProvider>
+		</>
 	)
 }
