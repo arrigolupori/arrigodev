@@ -7,9 +7,9 @@ export default function Hero() {
 				Learn how to build a SaaS from scratch. <span>For free.</span>
 			</h1>
 			<p>
-				Every 2 weeks, receive a new issue of the SaaS boilerplate
-				series directly in your inbox. It's 100% free, no strings
-				attached.
+				Every 2 weeks, receive a new issue of the Build a SaaS from
+				Scratch series directly in your inbox. It's 100% free, no
+				strings attached.
 			</p>
 			<SubBox />
 		</>

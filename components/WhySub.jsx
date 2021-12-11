@@ -27,7 +27,7 @@ export default function WhySub() {
 			<p>That&apos;s where I stand:</p>
 			<ul>
 				<li>
-					I only send <strong>1 email out every 2 weeks</strong>
+					I only send <strong>1 issue out every 2 weeks</strong>.
 				</li>
 				<li>
 					My emails are <strong>free of ads</strong>, pitches,

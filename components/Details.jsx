@@ -10,14 +10,75 @@ export default function Details() {
 			<p>
 				Whether you've experienced no-code tools in the past, you are a
 				beginner in traditional web development, or even have zero
-				skills but are curious enough to make it—this series is for you.
+				skills but are curious enough to stick to it—this series is for
+				you.
 			</p>
 			<p>
 				All you need to participate is a will to learn and the curiosity
 				to understand web development concepts{' '}
 				<Emoji symbol='🧑🏼‍💻 👩🏽‍💻 👨🏿‍💻' label='light bulb' />
 			</p>
-			<h3>Key details of the series:</h3>
+			<h3>
+				<Emoji symbol='👉🏼' label='hand pointing to right' /> Key details
+				of the SaaS series
+			</h3>
+			<p>
+				If you're unsure whether this series is right for you,{' '}
+				<a
+					href='https://arrigo.dev/blog/saas-series-release'
+					target='_blank'
+				>
+					check the full table of contents
+				</a>
+				. Here's what you can expect at a high level:
+			</p>
+			<ul>
+				<li>
+					<strong>Learn technologies progressively</strong> instead of
+					all at once, with the goal of giving you something that you
+					can showcase as yours. No unnecessary setup or long
+					configurations.
+				</li>
+				<li>
+					<strong>Main focus on common SaaS features</strong> such as
+					navigation, authentication, permissions, billing, data
+					visualization and exporting, and various user settings.
+				</li>
+				<li>
+					<strong>
+						Secondary focus on UX {'(User Experience)'} design
+					</strong>{' '}
+					for the portal, including mobile design, customer
+					onboarding, proper routing, dropdowns, modals, and toast
+					messages.
+				</li>
+			</ul>
+			<p>
+				The series will also feature 2 free third-party APIs:{' '}
+				<a href='https://clearbit.com/developers' target='_blank'>
+					Clearbit
+				</a>{' '}
+				and{' '}
+				<a href='https://hunter.io/api' target='_blank'>
+					Hunter
+				</a>
+				. They will help you get familiar with accessing data.
+			</p>
+			<h3>
+				<Emoji symbol='👉🏼' label='hand pointing to right' />{' '}
+				Technologies we'll use
+			</h3>
+			<p>
+				All necessary tools will be explained in the series. The end
+				result will be a{' '}
+				<a
+					href='https://github.com/arrigolupori/prospectrove-saas-boilerplate'
+					target='_blank'
+				>
+					SaaS boilerplate available for all to use on GitHub
+				</a>
+				:
+			</p>
 			<ul>
 				<li>
 					The backend is{' '}
@@ -41,14 +102,22 @@ export default function Details() {
 						MongoDB Atlas
 					</a>
 				</li>
-				<li>Main focus on common SaaS features</li>
+				<li>
+					Code hosting via{' '}
+					<a href='https://www.heroku.com/' target='_blank'>
+						Heroku
+					</a>{' '}
+					and{' '}
+					<a href='https://vercel.com/' target='_blank'>
+						Vercel
+					</a>
+				</li>
 				<li>
 					Simple authentication via{' '}
 					<a href='https://auth0.com/' target='_blank'>
 						Auth0
 					</a>
 				</li>
-				<li>Secondary focus on UX design</li>
 			</ul>
 			<p>
 				The series will also feature 2 free third-party APIs:{' '}
@@ -60,16 +129,6 @@ export default function Details() {
 					Hunter
 				</a>
 				. They will help you get familiar with accessing data.
-			</p>
-			<p>
-				The end result will be a{' '}
-				<a
-					href='https://github.com/arrigolupori/prospectrove-saas-boilerplate'
-					target='_blank'
-				>
-					SaaS boilerplate available for anyone to use on GitHub
-				</a>
-				. All necessary tools will be explained in the series.
 			</p>
 		</>
 	)
