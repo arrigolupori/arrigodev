@@ -1,7 +1,7 @@
 import styles from '../styles/SubBox.module.css'
-import Emoji from './Emoji'
+import Link from 'next/link'
 
-export default function SubBox() {
+export default function LoginForm() {
 	const registerUser = async (event) => {
 		event.preventDefault()
 		try {
@@ -47,41 +47,30 @@ export default function SubBox() {
 					autoComplete='email'
 					required
 				/>
-				<button type='submit' className={styles.displayBlock}>
-					Join now
-				</button>
-				<div className={styles.benefits}>
-					<p>
-						{' '}
-						<Emoji symbol='✔' label='checkmark' />
-						<span> Join 100+ fellow SaaS enthusiasts</span>
-					</p>
-					<p>
-						{' '}
-						<Emoji symbol='✔' label='checkmark' />
-						<span> Reference curated written resources</span>
-					</p>
-					<p>
-						{' '}
-						<Emoji symbol='✔' label='checkmark' />
-						<span> Get instant access to all previous issues</span>
-					</p>
-				</div>
-			</form>
-			<p className={styles.expectation}>
-				Don&apos;t really know what to expect?
-			</p>
-			<p className={styles.expectation}>
-				Here&apos;s{' '}
-				<a
-					href='https://eocampaign1.com/web-version?p=84114309-5506-11ec-96e5-06b4694bee2a&pt=campaign&t=1638626301&s=78053f209dda44683ee9d82bad1fcb374a566683aea31d7a60a9b02013c31957'
-					className={styles.expectationLink}
-					target='_blank'
-					rel='noreferrer'
+				<label htmlFor='password' className={styles.displayBlock}>
+					<em>Password</em>
+				</label>
+				<input
+					type='password'
+					name='password'
+					id='password'
+					className={styles.displayBlock}
+					required
+				/>
+				<button
+					type='submit'
+					className={`${styles.displayBlock} ${styles.logInButton}`}
 				>
-					the first email I sent out
-				</a>{' '}
-				to people who joined.
+					Sign in »
+				</button>
+			</form>
+			<p className={styles.expectation}>Want to sign up instead?</p>
+			<p className={styles.expectation}>
+				Use the form{' '}
+				<Link href='/'>
+					<a>on the home page</a>
+				</Link>
+				.
 			</p>
 		</>
 	)

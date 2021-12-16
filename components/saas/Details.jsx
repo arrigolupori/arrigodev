@@ -1,34 +1,24 @@
 import Link from 'next/link'
-import Emoji from './Emoji'
+import Emoji from '../Emoji'
 
 export default function Details() {
 	return (
 		<>
-			<h2>Who is this for?</h2>
 			<p>
-				This series is for builders <Emoji symbol='🛠' label='tools' />
+				Have you ever wanted to build your own SaaS but fell short of
+				technical knowledge and/or business know-how?
 			</p>
-			<p>
-				Whether you've experienced no-code tools in the past, you are a
-				beginner in traditional web development, or even have zero
-				skills but are curious enough to stick to it—this series is for
-				you.
-			</p>
-			<p>
-				All you need to participate is a will to learn and the curiosity
-				to understand web development concepts{' '}
-				<Emoji symbol='🧑🏼‍💻 👩🏽‍💻 👨🏿‍💻' label='light bulb' />
-			</p>
+			<p>You're in the right place!</p>
 			<h3>
 				<Emoji symbol='👉🏼' label='hand pointing to right' /> Key details
 				of the SaaS series
 			</h3>
 			<p>
-				If you're unsure whether this series is right for you,{' '}
+				If you&apos;re unsure whether this series is right for you,{' '}
 				<Link href='/blog/saas-series-toc'>
 					<a>check the full table of contents</a>
 				</Link>
-				. Here's what you can expect at a high level:
+				. Here&apos;s what you can expect at a high level:
 			</p>
 			<ul>
 				<li>
@@ -58,7 +48,7 @@ export default function Details() {
 			</p>
 			<h3>
 				<Emoji symbol='👉🏼' label='hand pointing to right' />{' '}
-				Technologies we'll use
+				Technologies we&apos;ll use
 			</h3>
 			<p>
 				All necessary tools will be explained in the series. The end
@@ -66,6 +56,7 @@ export default function Details() {
 				<a
 					href='https://github.com/arrigolupori/prospectrove-saas-boilerplate'
 					target='_blank'
+					rel='noreferrer'
 				>
 					SaaS boilerplate available for all to use on GitHub
 				</a>
@@ -74,62 +65,106 @@ export default function Details() {
 			<ul>
 				<li>
 					The backend is{' '}
-					<a href='https://nestjs.com/' target='_blank'>
+					<a
+						href='https://nestjs.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						NestJS
 					</a>{' '}
 					and the frontend{' '}
-					<a href='https://nextjs.org/' target='_blank'>
+					<a
+						href='https://nextjs.org/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						Next.js
 					</a>
 				</li>
 				<li>
 					Both front- and back-end use{' '}
-					<a href='https://www.typescriptlang.org/' target='_blank'>
+					<a
+						href='https://www.typescriptlang.org/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						TypeScript
 					</a>
 				</li>
 				<li>
 					Database hosted with{' '}
-					<a href='https://www.mongodb.com/atlas' target='_blank'>
+					<a
+						href='https://www.mongodb.com/atlas'
+						target='_blank'
+						rel='noreferrer'
+					>
 						MongoDB Atlas
 					</a>
 				</li>
 				<li>
 					Code hosting via{' '}
-					<a href='https://www.heroku.com/' target='_blank'>
+					<a
+						href='https://www.heroku.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						Heroku
 					</a>{' '}
 					and{' '}
-					<a href='https://vercel.com/' target='_blank'>
+					<a
+						href='https://vercel.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						Vercel
 					</a>
 				</li>
 				<li>
 					Simple authentication via{' '}
-					<a href='https://auth0.com/' target='_blank'>
+					<a
+						href='https://auth0.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						Auth0
 					</a>
 				</li>
 				<li>
 					Styling &amp; UI with{' '}
-					<a href='https://tailwindcss.com/' target='_blank'>
+					<a
+						href='https://tailwindcss.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						TailwindCSS
 					</a>
 				</li>
 				<li>
 					Recurring billing via{' '}
-					<a href='https://stripe.com/' target='_blank'>
+					<a
+						href='https://stripe.com/'
+						target='_blank'
+						rel='noreferrer'
+					>
 						Stripe
 					</a>
 				</li>
 			</ul>
 			<p>
 				The series will also feature 2 free third-party APIs:{' '}
-				<a href='https://clearbit.com/developers' target='_blank'>
+				<a
+					href='https://clearbit.com/developers'
+					target='_blank'
+					rel='noreferrer'
+				>
 					Clearbit
 				</a>{' '}
 				and{' '}
-				<a href='https://hunter.io/api' target='_blank'>
+				<a
+					href='https://hunter.io/api'
+					target='_blank'
+					rel='noreferrer'
+				>
 					Hunter
 				</a>
 				. They will help you get familiar with accessing data.

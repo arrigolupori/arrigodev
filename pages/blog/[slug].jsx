@@ -8,9 +8,9 @@ import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../../components/useDarkMode'
 import { lightTheme, darkTheme } from '../../components/Themes'
 import { GlobalStyles } from '../../components/GlobalStyles'
-import Toggle from '../../components/ThemeToggler'
 import Footer from '../../components/Footer'
 import styles from '../../styles/Home.module.css'
+import Navigation from '../../components/Navigation'
 
 export default function PostPage({
 	frontmatter: { title, meta_title, excerpt, date },
@@ -29,12 +29,16 @@ export default function PostPage({
 			<ThemeProvider theme={themeMode}>
 				<GlobalStyles />
 				<div className={styles.container}>
-					<Toggle theme={theme} toggleTheme={themeToggler} />
 					<p>
 						<Link href='/blog'>
 							<a>« back to latest updates</a>
 						</Link>
 					</p>
+					<Navigation
+						theme={theme}
+						themeToggler={themeToggler}
+						showLogin
+					/>
 					<div>
 						<h1>{meta_title}</h1>
 						<div>

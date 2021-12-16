@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { useDarkMode } from '../components/useDarkMode'
 import { lightTheme, darkTheme } from '../components/Themes'
 import { GlobalStyles } from '../components/GlobalStyles'
-import Toggle from '../components/ThemeToggler'
+import Navigation from '../components/Navigation'
 import styles from '../styles/Home.module.css'
 
 export default function _404() {
@@ -23,17 +23,21 @@ export default function _404() {
 			<ThemeProvider theme={themeMode}>
 				<GlobalStyles />
 				<div className={styles.container}>
-					<Toggle theme={theme} toggleTheme={themeToggler} />
 					<p>
 						<Link href='/'>
 							<a>« back to home page</a>
 						</Link>
 					</p>
+					<Navigation
+						theme={theme}
+						themeToggler={themeToggler}
+						showLogin
+					/>
 
 					<p>
-						Sorry, there's nothing here. Go back to the home page to
-						navigate useful resources on how to build your own SaaS
-						from scratch.
+						Sorry, there&apos;s nothing here. Go back to the home
+						page to navigate useful resources on how to build your
+						own SaaS from scratch.
 					</p>
 				</div>
 			</ThemeProvider>

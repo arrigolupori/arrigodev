@@ -1,16 +1,14 @@
 import Link from 'next/link'
-import SEO from '../components/SEO'
+import ReactPlayer from 'react-player'
+import SEO from '../../components/SEO'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../components/useDarkMode'
-import { lightTheme, darkTheme } from '../components/Themes'
-import { GlobalStyles } from '../components/GlobalStyles'
-import Navigation from '../components/Navigation'
-import Hero from '../components/Hero'
-import WhySub from '../components/WhySub'
-import WhoFor from '../components/WhoFor'
-import WhoAm from '../components/WhoAm'
-import Footer from '../components/Footer'
-import styles from '../styles/Home.module.css'
+import { useDarkMode } from '../../components/useDarkMode'
+import { lightTheme, darkTheme } from '../../components/Themes'
+import { GlobalStyles } from '../../components/GlobalStyles'
+import Navigation from '../../components/Navigation'
+import Details from '../../components/saas/Details'
+import Footer from '../../components/Footer'
+import styles from '../../styles/Home.module.css'
 
 export default function Home() {
 	const [theme, themeToggler, mountedComponent] = useDarkMode()
@@ -29,8 +27,8 @@ export default function Home() {
 				<GlobalStyles />
 				<div className={styles.container}>
 					<p>
-						<Link href='/blog'>
-							<a>Read the latest updates »</a>
+						<Link href='/'>
+							<a>« back to home page</a>
 						</Link>
 					</p>
 					<Navigation
@@ -38,10 +36,16 @@ export default function Home() {
 						themeToggler={themeToggler}
 						showLogin
 					/>
-					<Hero />
-					<WhoFor />
-					<WhySub />
-					<WhoAm />
+					<div className={styles.vidPlayerBox}>
+						<ReactPlayer
+							className={styles.vidPlayer}
+							url='https://vimeo.com/656704401'
+							width='100%'
+							height='100%'
+							controls
+						/>
+					</div>
+					<Details />
 					<Footer />
 				</div>
 			</ThemeProvider>

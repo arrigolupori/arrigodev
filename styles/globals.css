@@ -61,12 +61,13 @@ button {
 	border-radius: 8px;
 	cursor: pointer;
 	font-size: 0.8rem;
-	padding-left: 8px;
+	padding-left: 8px !important;
 	width: 4.8rem;
 	background: white;
 	height: 1.5rem;
 	outline: none;
 	text-align: left;
+	margin-right: 1em;
 }
 
 button:first-child {

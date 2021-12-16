@@ -4,7 +4,7 @@
 
 .displayBlock {
 	display: block;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 .benefits {
@@ -24,4 +24,10 @@
 
 .expectationLink:hover {
 	text-decoration: underline;
+}
+
+.logInButton {
+	margin-top: 1em;
+	color: white;
+	background: #03a9f4;
 }

@@ -8,7 +8,7 @@ import { useDarkMode } from '../../components/useDarkMode'
 import { lightTheme, darkTheme } from '../../components/Themes'
 import { GlobalStyles } from '../../components/GlobalStyles'
 import PostItem from '../../components/PostItem'
-import Toggle from '../../components/ThemeToggler'
+import Navigation from '../../components/Navigation'
 import styles from '../../styles/Home.module.css'
 import sortByDate from '../../utils/sortByDate'
 
@@ -28,12 +28,16 @@ export default function Home({ posts }) {
 			<ThemeProvider theme={themeMode}>
 				<GlobalStyles />
 				<div className={styles.container}>
-					<Toggle theme={theme} toggleTheme={themeToggler} />
 					<p>
 						<Link href='/'>
 							<a>« back to home page</a>
 						</Link>
 					</p>
+					<Navigation
+						theme={theme}
+						themeToggler={themeToggler}
+						showLogin
+					/>
 					{posts.map((post, index) => (
 						<PostItem key={index} post={post} />
 					))}

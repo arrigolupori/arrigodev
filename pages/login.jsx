@@ -5,11 +5,7 @@ import { useDarkMode } from '../components/useDarkMode'
 import { lightTheme, darkTheme } from '../components/Themes'
 import { GlobalStyles } from '../components/GlobalStyles'
 import Navigation from '../components/Navigation'
-import Hero from '../components/Hero'
-import WhySub from '../components/WhySub'
-import WhoFor from '../components/WhoFor'
-import WhoAm from '../components/WhoAm'
-import Footer from '../components/Footer'
+import LoginHero from '../components/LoginHero'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -29,20 +25,12 @@ export default function Home() {
 				<GlobalStyles />
 				<div className={styles.container}>
 					<p>
-						<Link href='/blog'>
-							<a>Read the latest updates »</a>
+						<Link href='/'>
+							<a>« back to home page</a>
 						</Link>
 					</p>
-					<Navigation
-						theme={theme}
-						themeToggler={themeToggler}
-						showLogin
-					/>
-					<Hero />
-					<WhoFor />
-					<WhySub />
-					<WhoAm />
-					<Footer />
+					<Navigation theme={theme} themeToggler={themeToggler} />
+					<LoginHero />
 				</div>
 			</ThemeProvider>
 		</>
