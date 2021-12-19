@@ -1,4 +1,4 @@
-import SubBox from './SubBox'
+import SubBox from '../SubBox'
 
 export default function Hero() {
 	return (

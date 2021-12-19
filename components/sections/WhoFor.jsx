@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Emoji from './Emoji'
+import Emoji from '../Emoji'
 
 export default function WhoFor() {
 	return (

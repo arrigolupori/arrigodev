@@ -5,14 +5,14 @@ import { marked } from 'marked'
 import Link from 'next/link'
 import SEO from '../../components/SEO'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../../components/useDarkMode'
-import { lightTheme, darkTheme } from '../../components/Themes'
-import { GlobalStyles } from '../../components/GlobalStyles'
-import Footer from '../../components/Footer'
+import { useDarkMode } from '../../components/mode/useDarkMode'
+import { lightTheme, darkTheme } from '../../components/mode/Themes'
+import { GlobalStyles } from '../../components/mode/GlobalStyles'
+import Footer from '../../components/ui/Footer'
 import styles from '../../styles/Home.module.css'
-import Navigation from '../../components/Navigation'
+import Navigation from '../../components/ui/Navigation'
 
-export default function PostPage({
+export default function SinglePost({
 	frontmatter: { title, meta_title, excerpt, date },
 	content,
 	slug,

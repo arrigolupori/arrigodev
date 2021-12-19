@@ -1,6 +1,6 @@
-import LoginForm from './LoginForm'
+import SignupForm from './SignupForm'
 
-export default function LoginHero() {
+export default function SignupHero() {
 	return (
 		<>
 			<h1>
@@ -11,7 +11,7 @@ export default function LoginHero() {
 				Find detailed videos, written resources, and a personalized
 				experience in a streamlined, easy-to-use portal.
 			</p>
-			<LoginForm />
+			<SignupForm />
 		</>
 	)
 }

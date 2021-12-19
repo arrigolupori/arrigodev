@@ -5,16 +5,11 @@ import { useDarkMode } from '../components/mode/useDarkMode'
 import { lightTheme, darkTheme } from '../components/mode/Themes'
 import { GlobalStyles } from '../components/mode/GlobalStyles'
 import Navigation from '../components/ui/Navigation'
-import Hero from '../components/sections/Hero'
-import WhySub from '../components/sections/WhySub'
-import WhoFor from '../components/sections/WhoFor'
-import WhoAm from '../components/sections/WhoAm'
-import Footer from '../components/ui/Footer'
+import SignupHero from '../components/signup/SignupHero'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function JoinPage() {
 	const [theme, themeToggler, mountedComponent] = useDarkMode()
-
 	const themeMode = theme === 'light' ? lightTheme : darkTheme
 
 	if (!mountedComponent) return <div />
@@ -29,20 +24,12 @@ export default function Home() {
 				<GlobalStyles />
 				<div className={styles.container}>
 					<p>
-						<Link href='/blog'>
-							<a>Read the latest updates »</a>
+						<Link href='/'>
+							<a>« back to home page</a>
 						</Link>
 					</p>
-					<Navigation
-						theme={theme}
-						themeToggler={themeToggler}
-						showLogin
-					/>
-					<Hero />
-					<WhoFor />
-					<WhySub />
-					<WhoAm />
-					<Footer />
+					<Navigation theme={theme} themeToggler={themeToggler} />
+					<SignupHero />
 				</div>
 			</ThemeProvider>
 		</>

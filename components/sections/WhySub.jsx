@@ -1,5 +1,5 @@
-import Emoji from './Emoji'
-import SubBox from './SubBox'
+import Emoji from '../Emoji'
+import SubBox from '../SubBox'
 
 export default function WhySub() {
 	return (

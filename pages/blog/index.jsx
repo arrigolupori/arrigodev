@@ -4,15 +4,15 @@ import Link from 'next/link'
 import matter from 'gray-matter'
 import SEO from '../../components/SEO'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../../components/useDarkMode'
-import { lightTheme, darkTheme } from '../../components/Themes'
-import { GlobalStyles } from '../../components/GlobalStyles'
+import { useDarkMode } from '../../components/mode/useDarkMode'
+import { lightTheme, darkTheme } from '../../components/mode/Themes'
+import { GlobalStyles } from '../../components/mode/GlobalStyles'
 import PostItem from '../../components/PostItem'
-import Navigation from '../../components/Navigation'
+import Navigation from '../../components/ui/Navigation'
 import styles from '../../styles/Home.module.css'
 import sortByDate from '../../utils/sortByDate'
 
-export default function Home({ posts }) {
+export default function BlogPage({ posts }) {
 	const [theme, themeToggler, mountedComponent] = useDarkMode()
 
 	const themeMode = theme === 'light' ? lightTheme : darkTheme

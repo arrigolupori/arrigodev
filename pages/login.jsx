@@ -1,14 +1,14 @@
 import Link from 'next/link'
 import SEO from '../components/SEO'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../components/useDarkMode'
-import { lightTheme, darkTheme } from '../components/Themes'
-import { GlobalStyles } from '../components/GlobalStyles'
-import Navigation from '../components/Navigation'
-import LoginHero from '../components/LoginHero'
+import { useDarkMode } from '../components/mode/useDarkMode'
+import { lightTheme, darkTheme } from '../components/mode/Themes'
+import { GlobalStyles } from '../components/mode/GlobalStyles'
+import Navigation from '../components/ui/Navigation'
+import LoginHero from '../components/signin/LoginHero'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function LoginPage() {
 	const [theme, themeToggler, mountedComponent] = useDarkMode()
 
 	const themeMode = theme === 'light' ? lightTheme : darkTheme

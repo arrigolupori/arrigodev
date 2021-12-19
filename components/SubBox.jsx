@@ -1,7 +1,8 @@
+import { useRouter } from 'next/router'
 import styles from '../styles/SubBox.module.css'
-import Emoji from './Emoji'
 
 export default function SubBox() {
+	const router = useRouter()
 	const registerUser = async (event) => {
 		event.preventDefault()
 		try {
@@ -20,54 +21,29 @@ export default function SubBox() {
 				}
 			)
 			if (res.ok) {
-				alert(
-					'Thank you, your information was submitted correctly. You will receive the first SaaS boilerplate issue in your inbox on Dec 18 2021. Looking forward to your participation!'
-				)
+				alert(router.push('/password'))
 			}
 		} catch {
 			alert(
 				"Something went wrong, please send a DM on Twitter @ArrigoLupori or an email to hey@arrigo.dev with your email address and I'll get you onboarded immediately."
 			)
 		}
-
-		event.target.reset()
 	}
 
 	return (
 		<>
-			<form onSubmit={registerUser} className={styles.formBottom}>
-				<label htmlFor='email' className={styles.displayBlock}>
-					<em>Email address</em>
-				</label>
-				<input
-					type='email'
-					name='email'
-					id='email'
-					className={styles.displayBlock}
-					autoComplete='email'
-					required
-				/>
-				<button type='submit' className={styles.displayBlock}>
-					Join now
-				</button>
-				<div className={styles.benefits}>
-					<p>
-						{' '}
-						<Emoji symbol='✔' label='checkmark' />
-						<span> Join 100+ fellow SaaS enthusiasts</span>
-					</p>
-					<p>
-						{' '}
-						<Emoji symbol='✔' label='checkmark' />
-						<span> Reference curated written resources</span>
-					</p>
-					<p>
-						{' '}
-						<Emoji symbol='✔' label='checkmark' />
-						<span> Get instant access to all previous issues</span>
-					</p>
-				</div>
-			</form>
+			<button
+				className={styles.getStarted}
+				onClick={() => router.push('/join')}
+			>
+				Get started
+			</button>
+			<button
+				className={styles.learnMore}
+				onClick={() => router.push('/saas')}
+			>
+				Learn more
+			</button>
 			<p className={styles.expectation}>
 				Don&apos;t really know what to expect?
 			</p>

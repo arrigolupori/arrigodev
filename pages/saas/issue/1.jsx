@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import ReactPlayer from 'react-player'
-import SEO from '../../components/SEO'
+import SEO from '@/components/SEO'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../../components/mode/useDarkMode'
-import { lightTheme, darkTheme } from '../../components/mode/Themes'
-import { GlobalStyles } from '../../components/mode/GlobalStyles'
-import Navigation from '../../components/ui/Navigation'
-import Details from '../../components/saas/Details'
-import Footer from '../../components/ui/Footer'
-import styles from '../../styles/Home.module.css'
+import { useDarkMode } from '@/components/mode/useDarkMode'
+import { lightTheme, darkTheme } from '@/components/mode/Themes'
+import { GlobalStyles } from '@/components/mode/GlobalStyles'
+import Navigation from '@/components/ui/Navigation'
+import Details from '@/components/saas/Details'
+import Footer from '@/components/ui/Footer'
+import styles from '@/styles/Home.module.css'
 
-export default function SaaSIntro() {
+export default function SingleIssue() {
 	const [theme, themeToggler, mountedComponent] = useDarkMode()
 
 	const themeMode = theme === 'light' ? lightTheme : darkTheme
@@ -36,6 +36,9 @@ export default function SaaSIntro() {
 						themeToggler={themeToggler}
 						showLogin
 					/>
+					<select className={styles.lessonSelect}>
+						<option value='Hello world'>Hello world</option>
+					</select>
 					<div className={styles.vidPlayerBox}>
 						<ReactPlayer
 							className={styles.vidPlayer}
@@ -45,8 +48,12 @@ export default function SaaSIntro() {
 							controls
 						/>
 					</div>
-					<Details />
-					<Footer />
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Autem porro hic omnis doloremque beatae deserunt nam
+						magnam, sint corporis. Veritatis esse dolor rem
+						reiciendis.
+					</p>
 				</div>
 			</ThemeProvider>
 		</>

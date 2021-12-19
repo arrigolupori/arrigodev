@@ -1,8 +1,7 @@
 import React from 'react'
 import { func, string } from 'prop-types'
 import styled from 'styled-components'
-import Emoji from './Emoji'
-import styles from '../styles/Toggler.module.css'
+import Emoji from '../Emoji'
 
 const Button = styled.button`
 	border: 2px solid #6b8096;

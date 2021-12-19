@@ -1,4 +1,4 @@
-import Emoji from './Emoji'
+import Emoji from '../Emoji'
 import Image from 'next/image'
 
 export default function WhoAm() {

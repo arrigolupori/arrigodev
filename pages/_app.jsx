@@ -1,3 +1,4 @@
+import { AuthProvider } from '../context/AuthContext'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as Fathom from 'fathom-client'
@@ -27,7 +28,11 @@ function MyApp({ Component, pageProps }) {
 			router.events.off('routeChangeComplete', onRouteChangeComplete)
 		}
 	}, [])
-	return <Component {...pageProps} />
+	return (
+		<AuthProvider>
+			<Component {...pageProps} />
+		</AuthProvider>
+	)
 }
 
 export default MyApp

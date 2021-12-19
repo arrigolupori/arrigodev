@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import SEO from '../components/SEO'
 import { ThemeProvider } from 'styled-components'
-import { useDarkMode } from '../components/useDarkMode'
-import { lightTheme, darkTheme } from '../components/Themes'
-import { GlobalStyles } from '../components/GlobalStyles'
-import Navigation from '../components/Navigation'
+import { useDarkMode } from '../components/mode/useDarkMode'
+import { lightTheme, darkTheme } from '../components/mode/Themes'
+import { GlobalStyles } from '../components/mode/GlobalStyles'
+import Navigation from '../components/ui/Navigation'
 import styles from '../styles/Home.module.css'
 
 export default function _404() {
