@@ -15,7 +15,29 @@ export default function SignupForm() {
 
 	const registerUser = async (event) => {
 		event.preventDefault()
-		register({ username, email, password })
+		try {
+			const res = await fetch(
+				'https://cors-proxy-al.herokuapp.com/https://emailoctopus.com/api/1.5/lists/df07faf3-5440-11ec-96e5-06b4694bee2a/contacts',
+				{
+					body: JSON.stringify({
+						api_key: '96a09bfb-7822-4958-bdb5-e29890bfd0d4',
+						email_address: event.target.email.value,
+						status: 'SUBSCRIBED',
+					}),
+					headers: {
+						'Content-Type': 'application/json',
+					},
+					method: 'POST',
+				}
+			)
+			if (res.ok) {
+				register({ username, email, password })
+			}
+		} catch {
+			alert(
+				'Something went wrong, please send an email to hey@arrigo.dev.'
+			)
+		}
 		event.target.reset()
 	}
 
