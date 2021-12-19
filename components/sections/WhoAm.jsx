@@ -1,4 +1,4 @@
-import Emoji from './Emoji'
+import Emoji from '../Emoji'
 import Image from 'next/image'
 
 export default function WhoAm() {
@@ -20,8 +20,8 @@ export default function WhoAm() {
 				digest <Emoji symbol='🔖' label='clipped paper' />
 			</p>
 			<p>
-				It&apos;s not my word against yours. You can change the app's
-				functionality to fit your style of development.
+				It&apos;s not my word against yours. You can change the
+				app&apos;s functionality to fit your style of development.
 			</p>
 			<p>
 				In fact, I encourage you to do so after the first 6-8 lessons.

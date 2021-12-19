@@ -1,6 +1,8 @@
+import { useRouter } from 'next/router'
 import styles from '../styles/SubBox.module.css'
 
 export default function SubBox() {
+	const router = useRouter()
 	const registerUser = async (event) => {
 		event.preventDefault()
 		try {
@@ -19,37 +21,44 @@ export default function SubBox() {
 				}
 			)
 			if (res.ok) {
-				alert(
-					'Thank you, your information was submitted correctly. You will receive the first Build Your SaaS issue in your inbox on Dec 18 2021. Looking forward to your participation!'
-				)
+				alert(router.push('/password'))
 			}
 		} catch {
 			alert(
 				"Something went wrong, please send a DM on Twitter @ArrigoLupori or an email to hey@arrigo.dev with your email address and I'll get you onboarded immediately."
 			)
 		}
-
-		event.target.reset()
 	}
 
 	return (
 		<>
-			<form onSubmit={registerUser} className={styles.formBottom}>
-				<label htmlFor='email' className={styles.displayBlock}>
-					<em>Email address</em>
-				</label>
-				<input
-					type='email'
-					name='email'
-					id='email'
-					className={styles.displayBlock}
-					autoComplete='email'
-					required
-				/>
-				<button type='submit' className={styles.displayBlock}>
-					<strong>Join now</strong>
-				</button>
-			</form>
+			<button
+				className={styles.getStarted}
+				onClick={() => router.push('/join')}
+			>
+				Get started
+			</button>
+			<button
+				className={styles.learnMore}
+				onClick={() => router.push('/saas')}
+			>
+				Learn more
+			</button>
+			<p className={styles.expectation}>
+				Don&apos;t really know what to expect?
+			</p>
+			<p className={styles.expectation}>
+				Here&apos;s{' '}
+				<a
+					href='https://eocampaign1.com/web-version?p=84114309-5506-11ec-96e5-06b4694bee2a&pt=campaign&t=1638626301&s=78053f209dda44683ee9d82bad1fcb374a566683aea31d7a60a9b02013c31957'
+					className={styles.expectationLink}
+					target='_blank'
+					rel='noreferrer'
+				>
+					the first email I sent out
+				</a>{' '}
+				to people who joined.
+			</p>
 		</>
 	)
 }

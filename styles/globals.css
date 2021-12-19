@@ -9,7 +9,6 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	background-color: #f9fafb;
 }
 
 a {
@@ -17,12 +16,83 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 p,
-ul {
+ul,
+ol {
 	line-height: 1.5em;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+ul,
+ol {
 	font-size: 1.1em;
 }
 
 img {
 	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1.25em;
+}
+
+input {
+	margin: 0;
+	border: 2px solid #6b8096;
+	height: 2rem;
+	border-radius: 8px;
+}
+
+button {
+	border: 2px solid #6b8096;
+	color: #6b8096;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 0.8rem;
+	padding-left: 8px !important;
+	width: 4.8rem;
+	background: white;
+	height: 1.5rem;
+	outline: none;
+	text-align: left;
+	margin-right: 1em;
+}
+
+button:first-child {
+	padding-left: 8px;
+	background: white;
+}
+
+button:hover {
+	font-style: italic;
+}
+
+/* blog styling */
+
+.blog-text pre {
+	background: #f4f4f4;
+	padding: 20px;
+	margin: 20px 0;
+	line-height: 2.3;
+}
+
+.blog-text ol {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.blog-text ol > li {
+	margin-bottom: 1em;
 }
