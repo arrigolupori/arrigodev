@@ -8,7 +8,7 @@ export default function Details() {
 				Have you ever wanted to build your own SaaS but fell short of
 				technical knowledge and/or business know-how?
 			</p>
-			<p>You're in the right place!</p>
+			<p>You&apos;re in the right place!</p>
 			<h3>
 				<Emoji symbol='👉🏼' label='hand pointing to right' /> Key details
 				of the SaaS series
