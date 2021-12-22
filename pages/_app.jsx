@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
 			<div className={styles.container}>
 				<p>
 					Unfortunately, I had to cancel the SaaS series due to an
-					overwhelming workload. I'm still considering making it
+					overwhelming workload. I&apos;m still considering making it
 					available as a standalone course rather than a bi-weekly
 					series but for the moment, it is cancelled. Sorry for the
 					inconvenience. See the{' '}
