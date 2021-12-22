@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import * as Fathom from 'fathom-client'
 import '../styles/globals.css'
+import styles from '../styles/Home.module.css'
 
 function MyApp({ Component, pageProps }) {
 	const router = useRouter()
@@ -30,7 +31,24 @@ function MyApp({ Component, pageProps }) {
 	}, [])
 	return (
 		<AuthProvider>
-			<Component {...pageProps} />
+			<div className={styles.container}>
+				<p>
+					Unfortunately, I had to cancel the SaaS series due to an
+					overwhelming workload. I'm still considering making it
+					available as a standalone course rather than a bi-weekly
+					series but for the moment, it is cancelled. Sorry for the
+					inconvenience. See the{' '}
+					<a
+						style={{ color: 'blue' }}
+						href='https://eocampaign1.com/web-version?p=459d4d03-60fe-11ec-96e5-06b4694bee2a&pt=campaign&t=1639941751&s=728aa5f8345fd4fb9636a31a69f5c371030f80b95bc02eba394967d8cc5ff881'
+						target='_blank'
+						rel='noreferrer'
+					>
+						message I sent out to existing subscribers
+					</a>
+					.
+				</p>
+			</div>
 		</AuthProvider>
 	)
 }
